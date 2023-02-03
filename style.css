@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&display=swap');
+
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--Off-white); */
+    height: 100vh;
+    width: 75%;
+    margin: 4rem auto;
+}
+
+.container{
+    /* background-color: aqua; */
+    /* border: 5px solid  rgba(0, 0, 0, .7); */
+    max-width: inherit ;
+    margin: 1.5rem 2rem;
+    max-height: 750px;
+}
+
+img{
+    width: 80%; 
+    height: 100%;
+    font-style: 'Inter', sans-serif;
+    src: url(assets\fonts\static\Inter-Regular.ttf);
+}
+
+p{
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+ nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+
+nav a:hover{
+    color: var(--Soft-red)
+}
+
+li{
+    list-style-type: none;
+    cursor: pointer; 
+}
+
+.menu-logo{
+    display: none;
+}
+
+/****************************************************************************************************************************************/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "grid1 grid1 grid5"
+    "grid2 grid3 grid5"
+    "grid6 grid7 grid8";
+    gap: 2rem;
+}
+
+.web3-image{
+    grid-area: grid1;
+}
+
+.web3-image > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.head-1{
+    grid-area: grid2;
+    font-size: 1.8rem;
+    line-height: 0.9;
+}
+
+.read-more{
+    grid-area: grid3;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    gap: 2rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.read-more button{
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    width: 8rem;
+    height: 2.5rem;
+    border-style: none;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+}
+
+.read-more button:hover{
+    background-color: var(--Very-dark-blue);
+}
+
+.new{
+    grid-area: grid5;
+    background-color: var(--Very-dark-blue);
+    padding: 2rem;
+    line-height: 1.2;
+}
+
+.new h2{
+    color: var(--Soft-orange);
+    font-size: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.new h3:hover{
+    color: var(--Soft-orange)
+}
+
+.new h3{
+    color: var(--Off-white);
+    font-size: 1.2rem;
+    padding-bottom: 1.4rem;
+}
+
+.new p{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+hr{
+    border-color: var(--Dark-grayish-blue);
+    margin: 1.6rem 0;
+}
+
+.bottom-row{
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+}
+
+.bottom-row-text h2{
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 0.8rem;
+    font-size: 1.875rem;
+}
+
+.bottom-row-text h3:hover{
+    color: var(--Soft-red);
+}
+
+.bottom-row-text h3{
+    color: var(--Very-dark-blue);
+    margin-bottom: 0.8rem;
+}
+
+.bottom-row-text p{
+    color: var(--Dark-grayish-blue);
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+.bottom-image{
+    height: 95%;
+    width: 45%
+}
+
+.retro{
+    grid-area: grid6;
+}
+
+.laptops{
+    grid-area: grid7;
+}
+
+.gaming{
+    grid-area: grid8;
+}
+
+footer{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    
+}
